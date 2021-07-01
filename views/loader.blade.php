@@ -32,9 +32,9 @@
         width: 1.5rem;
         height: 1.5rem;
         color: #6c757d;
-        -webkit-animation: spin 2s linear infinite;
-        -moz-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
+        -webkit-animation: spin 2.5s linear infinite;
+        -moz-animation: spin 2.5s linear infinite;
+        animation: spin 2.5s linear infinite;
     }
 
     @-moz-keyframes spin {
