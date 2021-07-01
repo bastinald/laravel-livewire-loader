@@ -1,0 +1,29 @@
+{
+    "name": "bastinald/laravel-livewire-loader",
+    "homepage": "https://github.com/bastinald/laravel-livewire-loader",
+    "description": "Laravel Livewire global loading spinner.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Dion",
+            "email": "bastinald@icloud.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0",
+        "livewire/livewire": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bastinald\\LaravelLivewireLoader\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bastinald\\LaravelLivewireLoader\\Providers\\LaravelLivewireLoaderProvider"
+            ]
+        }
+    }
+}
