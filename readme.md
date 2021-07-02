@@ -5,7 +5,9 @@ This package adds a global loading spinner to your Laravel Livewire project. The
 ## Documentation
 
 - [Installation](#installation)
-- [Publishing the View](#publishing-the-view)
+- [Publishing Assets](#publishing-assets)
+    - [Custom Config](#custom-config)
+    - [Custom View](#custom-view)
 
 ## Installation
 
@@ -23,20 +25,32 @@ Add the `livewire:loader` component to your app layout view:
 <script src="{{ asset('js/app.js') }}"></script>
 ```
 
-Require `../../vendor/bastinald/laravel-livewire-loader/js/loader` in your app javascript file:
+Require `../../vendor/bastinald/laravel-livewire-loader/resources/js/loader` in your app javascript file:
 
 ```javascript
 require('@popperjs/core');
 require('bootstrap');
-require('../../vendor/bastinald/laravel-livewire-loader/js/loader');
+require('../../vendor/bastinald/laravel-livewire-loader/resources/js/loader');
 ```
 
-## Publishing the View
+## Publishing Assets
 
-Use your own loader view by publishing the package view:
+### Custom Config
+
+Customize the loader configuration by publishing the config file:
 
 ```console
-php artisan vendor:publish --tag=laravel-livewire-loader
+php artisan vendor:publish --tag=laravel-livewire-loader:config
+```
+
+Now you can easily change things like the show delay and animation speed.
+
+### Custom View
+
+Use your own loader view by publishing the view file:
+
+```console
+php artisan vendor:publish --tag=laravel-livewire-loader:views
 ```
 
 Now edit the view file inside `resources/views/vendor/laravel-livewire-loader`. The package will use this view to render the component.
