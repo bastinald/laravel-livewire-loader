@@ -10,7 +10,7 @@
     #laravel-livewire-loader {
         opacity: 0;
         transition: opacity 500ms;
-        position: absolute;
+        position: fixed;
         bottom: 1rem;
         left: 0;
         width: 100%;
