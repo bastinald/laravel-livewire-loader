@@ -4,10 +4,15 @@ This package adds a global loading spinner to your Laravel Livewire project. The
 
 ## Documentation
 
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Publishing Assets](#publishing-assets)
     - [Custom Config](#custom-config)
     - [Custom View](#custom-view)
+
+## Requirements
+
+- Bootstrap 5 must be installed via webpack first
 
 ## Installation
 

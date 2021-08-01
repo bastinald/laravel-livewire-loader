@@ -4,14 +4,14 @@ let loaderTimeout = null;
 Livewire.hook('message.sent', () => {
     if (loaderTimeout == null) {
         loaderTimeout = setTimeout(() => {
-            loaderElement.style.opacity = '1';
+            loaderElement.classList.add('show');
         }, parseInt(loaderElement.dataset.showDelay));
     }
 });
 
 Livewire.hook('message.received', () => {
     if (loaderTimeout != null) {
-        loaderElement.style.opacity = '0';
+        loaderElement.classList.remove('show');
         clearTimeout(loaderTimeout);
         loaderTimeout = null;
     }

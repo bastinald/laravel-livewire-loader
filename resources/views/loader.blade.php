@@ -1,6 +1,7 @@
-<div id="laravel-livewire-loader" data-show-delay="{{ config('laravel-livewire-loader.show_delay') }}">
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<div id="laravel-livewire-loader" class="fade position-fixed start-0 end-0 bottom-0 text-center mb-3"
+    style="pointer-events: none; z-index: 1070;" data-show-delay="{{ config('laravel-livewire-loader.show_delay') }}">
+    <div class="d-inline-block bg-white border rounded p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="text-muted" style="width: 1.5rem; height: auto;">
             <path fill="currentColor" d="M256 0C238.3 0 224 14.33 224 32v64c0 17.67 14.31 32 32 32s32-14.33 32-32V32C288
             14.33 273.7 0 256 0zM256 384c-17.69 0-32 14.33-32 32v64c0 17.67 14.31 32 32 32s32-14.33 32-32v-64C288 398.3
             273.7 384 256 384zM480 224h-64c-17.69 0-32 14.33-32 32s14.31 32 32 32h64c17.69 0 32-14.33 32-32S497.7 224 480
@@ -18,51 +19,19 @@
 </div>
 
 <style>
-    #laravel-livewire-loader {
-        opacity: 0;
-        transition: opacity 500ms;
-        position: fixed;
-        bottom: 1rem;
-        left: 0;
-        width: 100%;
-        z-index: 1070;
-        text-align: center;
-        pointer-events: none;
-    }
-
-    #laravel-livewire-loader div {
-        display: inline-block;
-        background: #ffffff;
-        border: 1px solid rgba(0, 0, 0, .125);
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-    }
-
     #laravel-livewire-loader svg {
-        width: 1.5rem;
-        height: 1.5rem;
-        color: #6c757d;
         -webkit-animation: spin {{ config('laravel-livewire-loader.animation_speed') }}ms linear infinite;
         -moz-animation: spin {{ config('laravel-livewire-loader.animation_speed') }}ms linear infinite;
         animation: spin {{ config('laravel-livewire-loader.animation_speed') }}ms linear infinite;
     }
 
     @-moz-keyframes spin {
-        100% {
-            -moz-transform: rotate(360deg);
-        }
+        100% { -moz-transform: rotate(360deg); }
     }
-
     @-webkit-keyframes spin {
-        100% {
-            -webkit-transform: rotate(360deg);
-        }
+        100% { -webkit-transform: rotate(360deg); }
     }
-
     @keyframes spin {
-        100% {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-        }
+        100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
     }
 </style>
