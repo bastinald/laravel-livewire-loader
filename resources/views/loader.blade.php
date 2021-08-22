@@ -1,7 +1,8 @@
 <div id="laravel-livewire-loader" class="fade position-fixed start-0 end-0 bottom-0 text-center mb-3 pe-none"
-    data-show-delay="{{ config('laravel-livewire-loader.show_delay') }}">
+    style="z-index: 1090;" data-show-delay="{{ config('laravel-livewire-loader.show_delay') }}">
     <div class="d-inline-block bg-white border rounded p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="text-muted">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            class="text-muted" style="width: 1.5rem; height: auto;">
             <path fill="currentColor" d="M256 0C238.3 0 224 14.33 224 32v64c0 17.67 14.31 32 32 32s32-14.33 32-32V32C288
             14.33 273.7 0 256 0zM256 384c-17.69 0-32 14.33-32 32v64c0 17.67 14.31 32 32 32s32-14.33 32-32v-64C288 398.3
             273.7 384 256 384zM480 224h-64c-17.69 0-32 14.33-32 32s14.31 32 32 32h64c17.69 0 32-14.33 32-32S497.7 224
@@ -19,17 +20,11 @@
 </div>
 
 <style>
-    #laravel-livewire-loader {
-        z-index: 1090;
-    }
     #laravel-livewire-loader svg {
-        width: 1.5rem;
-        height: auto;
         -webkit-animation: spin {{ config('laravel-livewire-loader.animation_speed') }}ms linear infinite;
         -moz-animation: spin {{ config('laravel-livewire-loader.animation_speed') }}ms linear infinite;
         animation: spin {{ config('laravel-livewire-loader.animation_speed') }}ms linear infinite;
     }
-
     @-moz-keyframes spin {
         100% {
             -moz-transform: rotate(360deg);
