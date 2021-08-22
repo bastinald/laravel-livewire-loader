@@ -21,7 +21,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This value is the speed in which the loading spinner rotates at. It is
-    | used inside of the view CSS code. The value is in milliseconds.
+    | used inside the view CSS code. The value is in milliseconds.
     |
     */
 
