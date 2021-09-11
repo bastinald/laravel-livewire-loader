@@ -1,9 +1,3 @@
-# No Longer Maintained
-
-Please consider using the `wire:load` methods in your projects instead of this.
-
----
-
 # Laravel Livewire Loader
 
 This package adds a global loading spinner to your Laravel Livewire project. The loading spinner shows when any Livewire action is being executed. This keeps users engaged as they won't become frustrated by page hanging due to network latency. It also keeps your code much cleaner, as you won't be having to add loading spinners all over the place.
